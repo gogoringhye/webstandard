@@ -1,0 +1,660 @@
+<!DOCTYPE html> <!-- 이 한줄의 의미가 DTD 선언임, html5버전으로 실행(현재 html5, css 3버전 사용중)-->
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8"><!-- 전세계 통용되는 언어 속성 설정 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="웹표준, 웹접근성을 준수한 예제입니다.">
+	<meta name="keywords" content="웹표준, 웹접근성, 샘플사이트">
+	<meta name="generator" content="vs code">
+	<title>WEBSTANDARD</title>
+	<link rel="shortcut icon"
+		href="https://m.rabbits.kr/web/upload/NNEditor/20220510/mobile/a3005ff7bd9c62472a9b2aa34acf061c_1652158947.jpg">
+	<!--파비콘 이미지 주소는 css 위에 적으나 아래 적으나 상관없음, 다른 탭을 누르면 파비콘이 하얗게 보이는 이유는 정사각형이 아니라서임 -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+	<!--  sclick cdn에서 slick.min.css의 copy link tag 긁어오기(reset 위에 써줌)-->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css" />
+	<!-- lightgallery의 docs에서 가져온 코드를 lightgallery cdn에서 연결해줌 -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.min.css" />
+	<!-- ightgallery의 docs 썸네일을 lightgallery cdn에서 연결-->
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic:wght@400;700;800&display=swap"
+		rel="stylesheet">
+	<!-- 웹폰트, html 글꼴은 세가지 링크(google font) 중 마지막 링크만 가져와도 되며 css의 위, 아래 아무 곳에나 적어도 됨 -->
+
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div class="container">
+				<div class="header">
+					<div class="header-menu">
+						<a href="https://www.w3schools.com/" target="_blank">Designer</a>
+						<a href="https://www.w3schools.com/">Publisher</a>
+						<a href="https://www.w3schools.com/">Youtube</a>
+					</div><!-- header-menu -->
+
+					<div class="header-title">
+						<h1>Professional Publisher &amp; Designer</h1>
+						<br />
+						<a href="#">GreenArt.co.kr</a>
+					</div><!-- header-title -->
+					<div class="header-icon">
+						<a href="#" class="icon1">
+							<span class="ir">icon1</span>
+						</a>
+						<a href="#" class="icon2">
+							<span class="ir">icon2</span>
+						</a>
+						<a href="#" class="icon3">
+							<span class="ir">icon3</span>
+						</a>
+						<a href="#" class="icon4">
+							<span class="ir">icon4</span>
+						</a>
+					</div><!-- header-icon -->
+				</div><!-- header-->
+			</div> <!-- container -->
+		</div><!-- #header -->
+
+		<div id="contents">
+			<div class="cont_nav">
+				<div class="container">
+					<h2 class="ir">전체메뉴</h2>
+					<div class="nav clearfix">
+						<!-- 두개로 나눠 적으면 안됨 -->
+						<div>
+							<h3>HTML Reference</h3>
+							<ol>
+								<li><a href="#">HTML 태그(Tag)</a></li>
+								<li><a href="#">블럭요소/인라인요소</a></li>
+								<li><a href="#">DTD 선언</a></li>
+								<li><a href="#">언어 속성 설정</a></li>
+								<li><a href="#">HTML &lt;title&gt;</a></li>
+								<li><a href="#">HTML &lt;meta&gt;</a></li>
+								<li><a href="#">특수문자</a></li>
+								<li><a href="#">하이퍼 링크</a></li>
+								<li><a href="#">HTML &lt;style&gt;</a></li>
+								<li><a href="#">HTML &lt;html&gt;</a></li>
+								<li><a href="#">HTML &lt;head&gt;</a></li>
+								<li><a href="#">HTML &lt;div&gt;</a></li>
+								<li><a href="#">HTML &lt;colgroup&gt;</a></li>
+								<li><a href="#">HTML &lt;caption&gt;</a></li>
+							</ol>
+							<!-- 상단 타이틀 태그에 대한 것을 나타내려는데 <>를 태그로 받아들이므로 entitycode에서 기호를 가져와서 사용 -->
+						</div><!-- HTML Reference -->
+						<div>
+							<h3>CSS Reference</h3>
+							<ol>
+								<li><a href="#">CSS 선택자</a></li>
+								<li><a href="#">CSS 단위</a></li>
+								<li><a href="#">CSS 색상</a></li>
+								<li><a href="#">CSS 선언 방법</a></li>
+								<li><a href="#">상재주소와 절대주소</a></li>
+								<li><a href="#">CSS float</a></li>
+								<li><a href="#">이미지 표현방법</a></li>
+								<li><a href="#">이미지 스프라이트</a></li>
+								<li><a href="#">IR 효과</a></li>
+								<li><a href="#">이미지 최적화</a></li><!-- 어떤 크기의 이미지가 화면에 알맞게 나올지 -->
+								<li><a href="#">background-color</a></li>
+								<li><a href="#">border-style</a></li>
+								<li><a href="#">font-size</a></li>
+								<li><a href="#">text-align</a></li>
+							</ol>
+						</div><!-- CSS Reference -->
+						<div class="last">
+							<h3>webstandard</h3>
+							<ol>
+								<li><a href="#">웹표준</a></li>
+								<li><a href="#">웹접근성</a></li>
+								<li><a href="#">W3C</a></li>
+								<li><a href="#">웹접근성 연구소</a></li>
+								<li><a href="#">네이버 널리</a></li>
+								<li><a href="#">다음 다룸</a></li>
+								<li><a href="#">webstandard</a></li>
+							</ol>
+						</div><!-- webstandard -->
+					</div><!-- nav -->
+				</div> <!-- 위 css에 한번 적어놔서 오타나면 적용이 안됨 -->
+			</div><!-- cont_nav -->
+			<div id="cont_tit">
+				<div class="container">
+					<div class="tit">
+						<h2>&ldquo;나는 퍼블리셔이다&rdquo;</h2>
+						<a href="#" class="btn">
+							<span class="ir">전체메뉴</span>
+						</a>
+					</div>
+				</div>
+			</div><!-- cont_tit -->
+
+			<div id="cont_ban">
+				<div class="container">
+					<div class="ban">
+						<div>
+							<a href="#">
+								<img src="img/banner_link1.jpg" alt="웹표준 지침서 보기">
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="img/banner_link2.jpg" alt="CSS버튼 만들기">
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="img/banner_link3.jpg" alt="로그인폼 만들기">
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="img/banner_link1.jpg" alt="웹표준 지침서 보기">
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="img/banner_link2.jpg" alt="CSS버튼 만들기">
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="img/banner_link3.jpg" alt="로그인폼 만들기">
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="img/banner_link1.jpg" alt="웹표준 지침서 보기">
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="img/banner_link2.jpg" alt="CSS버튼 만들기">
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="img/banner_link3.jpg" alt="로그인폼 만들기">
+							</a>
+						</div>
+					</div><!-- ban -->
+				</div>
+			</div><!-- cont_ban -->
+
+			<div id="cont_cont">
+				<div class="container">
+					<div class="cont clearfix">
+						<div class="column col1">
+							<h3>
+								<span class="ir ico_img">아이콘1</span>
+								<em class="ico_tit">Notice</em>
+							</h3>
+							<p class="ico_desc">
+								웹페이지에서 가장 기본이 되는 게시판 유형입니다.
+							</p>
+
+							<!-- 게시판 -->
+							<div class="notice">
+								<h4>웹 퍼블리셔 면접 질문</h4>
+								<ul>
+									<li><a href="#">
+											display:inline과 display:block의 차이점은 무엇인가요?
+										</a></li>
+									<li><a href="#">
+											HTML태그중에 dl,dd,ul,ol,li의 차이점은 무엇인가요?
+										</a></li>
+									<li><a href="#">
+											HTML태그중에 strong과 em의 차이점은 무엇인가요?
+										</a></li>
+									<li><a href="#">
+											컨텐츠요소를 가운데 오게 하는 방법을 알려주세요!
+										</a></li>
+									<li><a href="#">
+											독타입을 선언하는 이유에 대해 설명하세요.
+										</a></li>
+								</ul>
+								<a href="#" class="more ir" title="화면열림">더보기</a>
+							</div>
+							<!-- 게시판유형2 -->
+							<div class="notice2">
+								<h4>웹 디자인 면접 질문</h4>
+								<ul>
+									<li>
+										<a href="#">JPG,PNG,GIf의 차이점은 무엇인가요?</a>
+										<span>2023.10.24</span>
+									</li>
+									<li>
+										<a href="#">UI디자인과 UX디자인의 차이점을 설명하세요</a>
+										<span>2023.10.24</span>
+									</li>
+									<li>
+										<a href="#">인터렉션디자인의 핵심은 무엇이라고 생각하나요?</a>
+										<span>2023.10.24</span>
+									</li>
+									<li>
+										<a href="#">웹디자인과 모바일 디자인 차이가 무엇이라고 생각하나요?</a>
+										<span>2023.10.24</span>
+									</li>
+									<li>
+										<a href="#">JPG,PNG,GIf의 차이점은 무엇인가요?</a>
+										<span>2023.10.24</span>
+									</li>
+								</ul>
+								<a href="#" class="more ir" title="화면열림">더보기</a>
+							</div>
+						</div><!-- col1 -->
+						<div class="column col2">
+							<h3>
+								<span class="ir ico_img">아이콘1</span>
+								<em class="ico_tit">Notice</em>
+							</h3>
+							<p class="ico_desc">
+								웹페이지에서 가장 기본이 되는 게시판 유형입니다.
+							</p>
+							<!-- 게시판 유형3 -->
+							<div class="notice3">
+								<h4>HTML Reference</h4>
+								<ul>
+									<li>
+										<a href="#">
+											<img src="img/notice01.jpg" alt="이미지">
+											<strong>[HTML] &lt;table&gt; </strong>
+											<span>&lt;table&gt; 태그는 표를 만들때 사용합니다.</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/notice02.jpg" alt="이미지">
+											<strong>[HTML] &lt;div&gt; </strong>
+											<span>&lt;div&gt; 태그는 문서의 섹션을 만들거나 영역을 나눌때 사용합니다.</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/notice03.jpg" alt="이미지">
+											<strong>[HTML] &lt;dl&gt; </strong>
+											<span>&lt;dl&gt; 태그는 용어를 설명하는 목록형 태그입니다.</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/notice04.jpg" alt="이미지">
+											<strong>[HTML] &lt;em&gt; </strong>
+											<span>&lt;em&gt; 태그는 텍스트를 강조할때 사용합니다.</span>
+										</a>
+									</li>
+								</ul>
+								<a href="#" class="more ir" title="새창열림">더보기</a>
+								<!-- 화면에 마우스를 올렸을 때 말풍선과 같은 역할이 title -->
+							</div>
+						</div><!-- col2 -->
+						<div class="column col3">
+							<h3>
+								<span class="ir ico_img">아이콘1</span>
+								<em class="ico_tit">Notice</em>
+							</h3>
+							<p class="ico_desc">
+								웹페이지에서 가장 기본이 되는 게시판 유형입니다.
+							</p>
+							<!-- 로그인 -->
+							<div class="login_wrap">
+								<h4 class="ir">로그인 정보</h4>
+								<form action="#" id="login_form">
+									<fieldset>
+										<legend class="ir">로그인 및 관련 설정</legend>
+										<div class="login_header clearfix">
+											<h5 class="ir">로그인 보안</h5>
+											<div class="lh_check">
+												<input type="checkbox" name="infor_check" id="infor_check"
+													class="infor_check">
+												<label for="infor_check">로그인 상태 유지</label>
+											</div><!-- lh_check -->
+											<div class="lh_ip">
+												IP보안 <em>ON</em>
+											</div><!-- lh_ip -->
+										</div><!-- login_header -->
+										<div class="login_content">
+											<h5 class="ir">로그인 영역</h5>
+											<div class="lc_text">
+												<label for="uid" class="ir">아이디</label>
+												<input type="text" id="uid" class="input_text" placeholder="아이디"
+													maxlength="20"><!-- 20자 이상 금지 -->
+												<label for="upw" class="ir">비밀번호</label>
+												<input type="password" id="upw" name="upw" class="input_text"
+													maxlength="20" placeholder="비밀번호">
+												<!-- id는 반드시 for와 같아야함, 가주어 placeholder로 비밀번호가 나오게 함 -->
+											</div><!-- lc_text -->
+											<button type="submit" class="lc_btn">로그인</button>
+										</div><!-- login_content -->
+										<div class="login_footer">
+											<h5 class="ir">로그인 문제해결</h5>
+											<ul>
+												<li>
+													<a href="#">
+														<strong>회원가입</strong>/
+													</a>
+												</li>
+												<li>
+													<a href="#">아이디</a>&middot;
+													<a href="#">비밀번호 찾기</a>
+												</li>
+											</ul>
+										</div><!-- login_footer -->
+									</fieldset><!-- check box, radio box-->
+								</form>
+							</div><!-- login_wrap -->
+							<!-- name이 아니라 id(class면 안됨)와 for가 같아야 연결이 됨 -->
+
+							<!-- 팝업 -->
+							<div class="popup">
+								<h4>Advertisement</h4>
+								<ul class="clearfix">
+									<li class="layer">
+										<a href="#">
+											<img src="img/sban07.jpg" alt="이미지7">
+										</a>
+									</li>
+									<li class="window">
+										<a href="#">
+											<img src="img/sban08.jpg" alt="이미지8">
+										</a>
+									</li>
+									<li id="lightgallery" class="lightgallery">
+										<a href="img/webstandard1.jpg">
+											<img alt="웹표준" src="img/sban07.jpg" />
+										</a>
+										<a href="img/webstandard2.jpg" style="display: none;">
+											<img alt="웹접근성" src="img/sban08.jpg" />
+										</a>
+										<a href="img/webstandard3.jpg" style="display: none;">
+											<img alt="웹접근성 준수" src="img/sban09.jpg" />
+										</a>
+									</li>
+								</ul>
+								<!-- lightgallery의 docs의 The markup 부분 긁어와서 div를 li로 바꿔주고 줌의 값인 data-lg-size="1600-2400"삭제해줌-->
+
+								<!-- webstandard2,3은 보일 필요 없어서 style을 "display: none;"해줌 -->
+
+								<!-- alt에 원하는 문구를 넣으면 썸네일 글자에 뜸 -->
+							</div>
+						</div><!-- col3 -->
+						<div class="column col4">
+							<h3>
+								<span class="ir ico_img">아이콘1</span>
+								<em class="ico_tit">Notice</em>
+							</h3>
+							<p class="ico_desc">
+								웹페이지에서 가장 기본이 되는 게시판 유형입니다.
+							</p>
+							<!-- 마우스 오버 효과 -->
+							<div class="notice_hover">
+								<h4>Mouse Hover</h4>
+								<ul class="clearfix">
+									<li>
+										<a href="#">
+											<span>
+												<img src="img/sban01.jpg" alt="이미지1">
+												<em>바로가기</em>
+											</span>
+											<strong>
+												와이어프레임
+											</strong>
+										</a><!-- 인라인 요소(넓이나 높이에 대한 개념이 없음) 안에는 인라인 요소를 넣음, a 태그 안에는 전부 인라인 요소 -->
+									</li>
+									<li>
+										<a href="#">
+											<span>
+												<img src="img/sban02.jpg" alt="이미지2">
+												<em>바로가기</em>
+											</span>
+											<strong>
+												스케치 작업
+											</strong>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>
+												<img src="img/sban03.jpg" alt="이미지3">
+												<em>바로가기</em>
+											</span>
+											<strong>
+												UI 디자인
+											</strong>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- 마우스 오버 효과2 -->
+							<div class="notice_hover2">
+								<h4 class="ir">Mouse Hover</h4>
+								<ul class="clearfix">
+									<li>
+										<a href="#">
+											<span>
+												<img src="img/sban04.jpg" alt="이미지4">
+												<em>바로가기</em>
+											</span>
+											<strong>HTML</strong>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>
+												<img src="img/sban05.jpg" alt="이미지5">
+												<em>바로가기</em>
+											</span>
+											<strong>CSSW</strong>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>
+												<img src="img/sban06.jpg" alt="이미지6">
+												<em>바로가기</em>
+											</span>
+											<strong>Jquery</strong>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div><!-- col4 -->
+						<div class="column col5">
+							<h3>
+								<span class="ir ico_img">아이콘1</span>
+								<em class="ico_tit">Notice</em>
+							</h3>
+							<p class="ico_desc">
+								웹페이지에서 가장 기본이 되는 게시판 유형입니다.
+							</p>
+							<!--탭메뉴 -->
+							<div class="tab_menu">
+								<div class="h4 ir">텝메뉴</div>
+								<ul class="clearfix">
+									<li class="active">
+										<a href="#">공지사항1</a>
+										<ul>
+											<li>
+												<a href="#">
+													첫번째 공지사항입니다.첫번째 공지사항입니다.첫번째 공지사항입니다.
+												</a></li>
+											<li><a href="#">
+													첫번째 공지사항입니다.첫번째 공지사항입니다.첫번째 공지사항입니다.
+												</a></li>
+											<li><a href="#">
+													첫번째 공지사항입니다.첫번째 공지사항입니다.첫번째 공지사항입니다.
+												</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">공지사항2</a>
+										<ul>
+											<li>
+												<a href="#">두번째 공지사항입니다.두번째 공지사항입니다.두번째 공지사항입니다.</a>
+											</li>
+											<li>
+												<a href="#">두번째 공지사항입니다.두번째 공지사항입니다.두번째 공지사항입니다.</a></li>
+											<li><a href="#">두번째 공지사항입니다.두번째 공지사항입니다.두번째 공지사항입니다.</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">공지사항3</a>
+										<ul>
+											<li><a href="#">세번째 공지사항입니다.세번째 공지사항입니다.세번째 공지사항입니다.</a></li>
+											<li><a href="#">세번째 공지사항입니다.세번째 공지사항입니다.세번째 공지사항입니다.</a></li>
+											<li><a href="#">세번째 공지사항입니다.세번째 공지사항입니다.세번째 공지사항입니다.</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div><!-- tab_menu -->
+
+							<!-- 게시판유형4 -->
+							<div class="notice4">
+								<h4>최신 <em>공지사항</em></h4>
+								<ul>
+									<li>
+										<a href="#">웹디자인과 웹퍼블리셔의 차이점은 무엇인가요?</a>
+										<span>2023.10.30</span>
+									</li>
+									<li>
+										<a href="#">웹디자인과 웹퍼블리셔의 차이점은 무엇인가요?</a>
+										<span>2023.10.30</span>
+									</li>
+									<li>
+										<a href="#">웹디자인과 웹퍼블리셔의 차이점은 무엇인가요?</a>
+										<span>2023.10.30</span>
+									</li>
+								</ul>
+								<a href="#" class="more" title="더보기">더보기</a>
+							</div>
+							<!-- 색을 다르게 주기 위해서 h4와 em으로 나눠 묶음 -->
+
+						</div><!-- col5 -->
+						<div class="column col6">
+							<h3>
+								<span class="ir ico_img">아이콘1</span>
+								<em class="ico_tit">Notice</em>
+							</h3>
+							<p class="ico_desc">
+								웹페이지에서 가장 기본이 되는 게시판 유형입니다.
+							</p>
+							<!-- slick 갤러리 -->
+							<div class="gallery">
+								<h4>포트폴리오</h4>
+
+								<div class="gallery_img">
+									<div>
+										<a href="#">
+											<img src="img/gallery01.jpg" alt="gallery">
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<img src="img/gallery02.jpg" alt="gallery">
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<img src="img/gallery03.jpg" alt="gallery">
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<img src="img/gallery04.jpg" alt="gallery">
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<img src="img/gallery05.jpg" alt="gallery">
+										</a>
+									</div>
+								</div><!-- gallery_img -->
+								<div class="gallery_btn">
+									<button class="gb_icon1 play">
+										<span class="ir">Play</span>
+									</button>
+									<button class="gb_icon2 pause">
+										<span class="ir">Pause</span>
+									</button>
+									<button class="gb_icon3 prev">
+										<span class="ir">Prev</span>
+									</button>
+									<button class="gb_icon4 next">
+										<span class="ir">Next</span>
+									</button>
+								</div><!-- gallery_btn -->
+							</div>
+						</div><!-- col6 -->
+					</div>
+				</div>
+			</div><!-- cont_cont -->
+
+		</div><!-- contents -->
+
+        <div id="footer">
+            <div class="container">
+                <h2 class="ir">푸터영역</h2>
+                <div class="footer">
+                    <ul>
+                        <li><a href="#">사이트 도움말</a></li>
+                        <li><a href="#">사이트 이용약관</a></li>
+						<li><a href="#">사이트 운영규칙</a></li>
+						<li><a href="#"><strong>개인정보취급방침</strong></a></li>
+						<li><a href="#">책임의 한계와 법적고지</a></li>
+						<li><a href="#">게시중단요청</a></li>
+						<li><a href="#">고객센터</a></li>
+                    </ul>
+					<address>
+                        Copyright&copy;GreenComputer.co.kr All Right Reserved
+                    </address>
+                </div>
+            </div>
+        </div>
+	</div><!-- wrap -->
+
+
+	<!-- layer popup -->
+	<div id="layer">
+		<img src="img/webstandard1.jpg" alt="웹표준">
+		<a href="#" class="close">close</a>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<!-- jQuery CDN에서 jQuery 1.X minified 긁어오기, jquery는 항상 제일 위로 올려줘야 돌아감(jquery는 순서 매우 중요, 아래쪽으로 갈수록 영향 커짐) -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<!-- slick.js에서 Set up your HTML markup(your-class 이하생략) div에 긁어온 뒤 slick-carousel-Libraries에서 slick.css의 copy ink tag 긁어오기-->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+	<!-- lightgallery cdn에서 연결-->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js">
+	</script>
+	<!--lightgallery cdn에서 연결(lightgallery의 docs에서 보면 script src 연결하라고 적혀있음)-->
+
+	<script src="js/main.js"></script>
+	<!-- main -->
+</body>
+
+</html>
+
+<!-- 
+글자 지원은 UTF, meta는 사용자가 어떤 디바이스를 쓰던 초기값으로 보겠다는 의미(scale=1.0) -->
+<!-- meta==> descroption 설명, content ~라고 검색을하면 보여주겠다, 여기에 적어야 로봇이 인식하고 사람들이 많이 볼 수 있도록 상단에 올려줌 -->
+<!-- wrap:하고 있는 영역을 한번 더 감싸줌, container: 갇히는 영역, container 밖은 밖의 영역-->
+<!-- "targer="_blank" 써주면 옆창에 새탭으로 열림 -->
+<!-- <h1>Professional Publisher &amp; Designer</h1>==> &는 EntityCode에서 긁어와야함 -->
+<!-- 한국어로 읽게 하려면 언어를 ko, 한국어로 바꿔줘야함 -->
+<!-- min은 용량 적음 -->
+<!--  테마의 역할을 알아보기 위해 긁어옴==> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>, 
+    slick cdn에서 theme.min.css 긁어오기, cdn을 사용하는 이유는 화면을 구현 시킬 때 인터넷만 연결된다는 가정하에 로딩이 빠름 -->
+<!-- id를 쓰는 이유는 애니메이션을 줄 때 사이트 길이가 길어지면 영역마다 싸줘야하기 때문임 -->
